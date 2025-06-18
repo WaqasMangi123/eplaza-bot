@@ -834,94 +834,93 @@ Remember: You know ALL our products intimately. Always provide specific product 
                             relevant_products.append(product)
         
         # Category filtering
-category_keywords = {
-    # Audio & Electronics
-    'earbuds': 'earbuds_headphones',
-    'headphones': 'earbuds_headphones',
-    'airpods': 'earbuds_headphones',
-    'audio': 'earbuds_headphones',
-    'wireless': 'earbuds_headphones',
-    
-    # Smartphones
-    'phone': 'smartphones',
-    'smartphone': 'smartphones',
-    'mobile': 'smartphones',
-    'iphone': 'smartphones',
-    'android': 'smartphones',
-    'samsung': 'smartphones',
-    'galaxy': 'smartphones',
-    
-    # Beauty & Cosmetics
-    'makeup': 'beauty_cosmetics',
-    'cosmetics': 'beauty_cosmetics',
-    'beauty': 'beauty_cosmetics',
-    'lipstick': 'beauty_cosmetics',
-    'foundation': 'beauty_cosmetics',
-    'powder': 'beauty_cosmetics',
-    'eyeshadow': 'beauty_cosmetics',
-    'brow': 'beauty_cosmetics',
-    'primer': 'beauty_cosmetics',
-    
-    # Skincare
-    'skincare': 'skincare',
-    'face wash': 'skincare',
-    'facewash': 'skincare',
-    'cleanser': 'skincare',
-    'scrub': 'skincare',
-    'cleansing': 'skincare',
-    'moisturizer': 'skincare',
-    
-    # Fragrances
-    'perfume': 'fragrances',
-    'fragrance': 'fragrances',
-    'cologne': 'fragrances',
-    'scent': 'fragrances',
-    'oud': 'fragrances',
-    'musk': 'fragrances',
-    
-    # Men's Clothing
-    'mens shirt': 'clothing_men',
-    'mens tshirt': 'clothing_men',
-    'mens t-shirt': 'clothing_men',
-    'mens polo': 'clothing_men',
-    'mens clothing': 'clothing_men',
-    'men shirt': 'clothing_men',
-    'men tshirt': 'clothing_men',
-    'men polo': 'clothing_men',
-    'polo shirt': 'clothing_men',
-    'graphic tee': 'clothing_men',
-    
-    # Women's Clothing
-    'womens shirt': 'clothing_women',
-    'womens top': 'clothing_women',
-    'womens blouse': 'clothing_women',
-    'womens clothing': 'clothing_women',
-    'women shirt': 'clothing_women',
-    'women top': 'clothing_women',
-    'women blouse': 'clothing_women',
-    'blouse': 'clothing_women',
-    'embroidered': 'clothing_women',
-    
-    # Smartwatches
-    'watch': 'smartwatches',
-    'smartwatch': 'smartwatches',
-    'smart watch': 'smartwatches',
-    'apple watch': 'smartwatches',
-    'fitness tracker': 'smartwatches',
-    'wearable': 'smartwatches',
-    
-    # Jeans & Denim
-    'jeans': 'jeans_denim',
-    'denim': 'jeans_denim',
-    'pants': 'jeans_denim',
-    'cargo': 'jeans_denim',
-    'skinny jeans': 'jeans_denim',
-    'straight jeans': 'jeans_denim',
-    'baggy jeans': 'jeans_denim',
-    'denim shorts': 'jeans_denim',
-    'denim skirt': 'jeans_denim'
-}
-        
+        category_keywords = {
+            # Audio & Electronics
+            'earbuds': 'earbuds_headphones',
+            'headphones': 'earbuds_headphones',
+            'airpods': 'earbuds_headphones',
+            'audio': 'earbuds_headphones',
+            'wireless': 'earbuds_headphones',
+            
+            # Smartphones
+            'phone': 'smartphones',
+            'smartphone': 'smartphones',
+            'mobile': 'smartphones',
+            'iphone': 'smartphones',
+            'android': 'smartphones',
+            'samsung': 'smartphones',
+            'galaxy': 'smartphones',
+            
+            # Beauty & Cosmetics
+            'makeup': 'beauty_cosmetics',
+            'cosmetics': 'beauty_cosmetics',
+            'beauty': 'beauty_cosmetics',
+            'lipstick': 'beauty_cosmetics',
+            'foundation': 'beauty_cosmetics',
+            'powder': 'beauty_cosmetics',
+            'eyeshadow': 'beauty_cosmetics',
+            'brow': 'beauty_cosmetics',
+            'primer': 'beauty_cosmetics',
+            
+            # Skincare
+            'skincare': 'skincare',
+            'face wash': 'skincare',
+            'facewash': 'skincare',
+            'cleanser': 'skincare',
+            'scrub': 'skincare',
+            'cleansing': 'skincare',
+            'moisturizer': 'skincare',
+            
+            # Fragrances
+            'perfume': 'fragrances',
+            'fragrance': 'fragrances',
+            'cologne': 'fragrances',
+            'scent': 'fragrances',
+            'oud': 'fragrances',
+            'musk': 'fragrances',
+            
+            # Men's Clothing
+            'mens shirt': 'clothing_men',
+            'mens tshirt': 'clothing_men',
+            'mens t-shirt': 'clothing_men',
+            'mens polo': 'clothing_men',
+            'mens clothing': 'clothing_men',
+            'men shirt': 'clothing_men',
+            'men tshirt': 'clothing_men',
+            'men polo': 'clothing_men',
+            'polo shirt': 'clothing_men',
+            'graphic tee': 'clothing_men',
+            
+            # Women's Clothing
+            'womens shirt': 'clothing_women',
+            'womens top': 'clothing_women',
+            'womens blouse': 'clothing_women',
+            'womens clothing': 'clothing_women',
+            'women shirt': 'clothing_women',
+            'women top': 'clothing_women',
+            'women blouse': 'clothing_women',
+            'blouse': 'clothing_women',
+            'embroidered': 'clothing_women',
+            
+            # Smartwatches
+            'watch': 'smartwatches',
+            'smartwatch': 'smartwatches',
+            'smart watch': 'smartwatches',
+            'apple watch': 'smartwatches',
+            'fitness tracker': 'smartwatches',
+            'wearable': 'smartwatches',
+            
+            # Jeans & Denim
+            'jeans': 'jeans_denim',
+            'denim': 'jeans_denim',
+            'pants': 'jeans_denim',
+            'cargo': 'jeans_denim',
+            'skinny jeans': 'jeans_denim',
+            'straight jeans': 'jeans_denim',
+            'baggy jeans': 'jeans_denim',
+            'denim shorts': 'jeans_denim',
+            'denim skirt': 'jeans_denim'
+        }    
         for keyword, category in category_keywords.items():
             if keyword in user_input_lower and category in self.products:
                 relevant_products.extend(self.products[category])
